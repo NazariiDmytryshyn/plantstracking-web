@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PlantsTracking — Політика конфіденційності</title>
+<meta name="description" content="Privacy policy for the PlantsTracking app.">
+<style>
+  :root {
+    --bg: #EFF7EA;
+    --surface: #FFFFFF;
+    --surface-soft: #E3EEE5;
+    --accent: #4C9A6A;
+    --accent-deep: #3A7A53;
+    --warm: #E0A83E;
+    --warm-soft: #FBF0DB;
+    --text: #223126;
+    --text-muted: #5B6B60;
+    --border: #DCE8DE;
+    --shadow: rgba(60, 90, 70, 0.12);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #11150F;
+      --surface: #1E2620;
+      --surface-soft: #233229;
+      --accent: #6FCB93;
+      --accent-deep: #8CDBA9;
+      --warm: #E8BE6C;
+      --warm-soft: #332B1D;
+      --text: #EAF2EC;
+      --text-muted: #9DB0A4;
+      --border: #2C3A31;
+      --shadow: rgba(0, 0, 0, 0.35);
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #11150F;
+    --surface: #1E2620;
+    --surface-soft: #233229;
+    --accent: #6FCB93;
+    --accent-deep: #8CDBA9;
+    --warm: #E8BE6C;
+    --warm-soft: #332B1D;
+    --text: #EAF2EC;
+    --text-muted: #9DB0A4;
+    --border: #2C3A31;
+    --shadow: rgba(0, 0, 0, 0.35);
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Karla", -apple-system, "Segoe UI", sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 56px 20px 96px;
+  }
+
+  header.doc-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 40px;
+  }
+
+  .mark {
+    width: 44px;
+    height: 44px;
+    border-radius: 13px;
+    background: linear-gradient(160deg, var(--accent) 0%, var(--accent-deep) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 16px var(--shadow);
+    flex-shrink: 0;
+  }
+  .mark svg { width: 24px; height: 24px; }
+
+  .eyebrow {
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text-muted);
+  }
+
+  h1 {
+    font-family: "Quicksand", "Karla", sans-serif;
+    font-weight: 700;
+    font-size: clamp(30px, 5vw, 40px);
+    margin: 4px 0 0;
+    text-wrap: balance;
+    letter-spacing: -0.01em;
+  }
+
+  .updated {
+    color: var(--text-muted);
+    font-size: 14px;
+  }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    box-shadow: 0 12px 32px var(--shadow);
+    padding: 40px;
+  }
+
+  @media (max-width: 560px) {
+    .card { padding: 28px 22px; border-radius: 20px; }
+  }
+
+  .lede {
+    font-size: 17.5px;
+    color: var(--text);
+    margin: 0 0 8px;
+  }
+
+  .lede strong { color: var(--accent-deep); }
+
+  .promise-list {
+    list-style: none;
+    margin: 24px 0 0;
+    padding: 0;
+    display: grid;
+    gap: 10px;
+  }
+  .promise-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 15px;
+    color: var(--text);
+  }
+  .promise-list svg {
+    flex-shrink: 0;
+    margin-top: 3px;
+    color: var(--accent);
+  }
+
+  section.doc-section {
+    margin-top: 44px;
+  }
+
+  section.doc-section .eyebrow {
+    color: var(--accent-deep);
+  }
+
+  h2 {
+    font-family: "Quicksand", "Karla", sans-serif;
+    font-weight: 600;
+    font-size: 22px;
+    margin: 4px 0 16px;
+    text-wrap: balance;
+  }
+
+  h3 {
+    font-family: "Quicksand", "Karla", sans-serif;
+    font-weight: 600;
+    font-size: 16.5px;
+    margin: 0 0 6px;
+    color: var(--text);
+  }
+
+  p { margin: 0 0 14px; color: var(--text); }
+  p.muted, li.muted, .fineprint { color: var(--text-muted); font-size: 14px; }
+
+  .data-grid {
+    display: grid;
+    gap: 14px;
+    margin: 18px 0 0;
+  }
+
+  .data-row {
+    display: grid;
+    grid-template-columns: minmax(140px, 200px) 1fr;
+    gap: 18px;
+    padding: 16px 18px;
+    background: var(--surface-soft);
+    border-radius: 14px;
+  }
+  @media (max-width: 560px) {
+    .data-row { grid-template-columns: 1fr; gap: 4px; }
+  }
+
+  .data-row .what {
+    font-weight: 600;
+    font-size: 14.5px;
+    color: var(--text);
+  }
+  .data-row .why { font-size: 14.5px; color: var(--text-muted); }
+  .data-row .why b { color: var(--text); font-weight: 600; }
+
+  ul.plain { margin: 0 0 14px; padding-left: 20px; }
+  ul.plain li { margin-bottom: 6px; }
+
+  a { color: var(--accent-deep); text-decoration-color: var(--border); text-underline-offset: 2px; }
+  a:hover { text-decoration-color: currentColor; }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  .divider {
+    height: 1px;
+    background: var(--border);
+    border: none;
+    margin: 44px 0;
+  }
+
+  .contact-block {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 14px;
+    padding: 20px 22px;
+    background: var(--warm-soft);
+    border-radius: 16px;
+  }
+  .contact-block .label { font-size: 13.5px; color: var(--text-muted); }
+  .contact-block .email {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    color: var(--text);
+  }
+
+  footer.doc-footer {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    color: var(--text-muted);
+    font-size: 13.5px;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .card { animation: rise 0.5s ease-out; }
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  }
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600;700&family=Karla:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="page">
+  <header class="doc-header">
+    <div class="mark" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 21C12 21 5 16.5 5 10.5C5 6.9 7.7 4 11 4C11.4 4 11.8 4.05 12.2 4.14C12.6 2.9 13.7 2 15 2C16.66 2 18 3.34 18 5C18 5.4 17.92 5.78 17.78 6.13C18.53 7.11 19 8.34 19 9.5C19 15 12 21 12 21Z" fill="white" fill-opacity="0.92"/>
+      </svg>
+    </div>
+    <span class="eyebrow">PlantsTracking · Юридичний документ</span>
+    <h1>Політика конфіденційності</h1>
+    <span class="updated">Останнє оновлення: 4 вересня 2026</span>
+  </header>
+
+  <div class="card">
+    <p class="lede">
+      PlantsTracking — це трекер поливу рослин, який рахує реальний водний баланс ґрунту замість фіксованого графіка.
+      <strong>У застосунку немає акаунтів, реклами й трекінгу.</strong> Ця сторінка пояснює просто, які дані застосунок
+      використовує, навіщо, і що з ними НЕ відбувається.
+    </p>
+    <ul class="promise-list">
+      <li>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Дані про твої рослини зберігаються локально на пристрої — ми не тримаємо власного сервера з твоїми даними.
+      </li>
+      <li>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Реєстрація не потрібна — застосунком можна користуватись повністю анонімно.
+      </li>
+      <li>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 13l4 4L19 7" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Немає реклами й немає сторонніх трекерів/аналітики.
+      </li>
+    </ul>
+
+    <section class="doc-section">
+      <span class="eyebrow">Розділ 1</span>
+      <h2>Що ми обробляємо, і навіщо</h2>
+      <p>Кожен тип даних використовується лише для конкретної функції, яку він вмикає — нижче для кожного вказано, куди саме він іде.</p>
+
+      <div class="data-grid">
+        <div class="data-row">
+          <div class="what">Фото рослини</div>
+          <div class="why">
+            Коли ти фотографуєш рослину для розпізнавання виду, AI-діагностики стану чи фонових рекомендацій (Pro),
+            фото надсилається одному з розпізнавачів — <b>PlantNet</b> або <b>Anthropic Claude</b> — лише щоб отримати
+            відповідь для цієї конкретної функції. Фото рослин також зберігаються локально на пристрої для фотожурналу.
+          </div>
+        </div>
+        <div class="data-row">
+          <div class="what">Приблизна локація</div>
+          <div class="why">
+            Використовується, щоб отримати реальний прогноз погоди твого регіону (через <b>Apple WeatherKit</b> або
+            <b>Open-Meteo</b>) — це і є вхідні дані для розрахунку випаровування вологи з ґрунту. Точна геолокація не
+            зберігається і нікуди, крім погодного запиту, не передається.
+          </div>
+        </div>
+        <div class="data-row">
+          <div class="what">Дані про рослини й полив</div>
+          <div class="why">
+            Назва, вид, параметри горщика й ґрунту, журнал поливів — усе це зберігається локально на пристрої
+            (SwiftData). Якщо в тебе увімкнено резервне копіювання, копія йде в <b>твій власний iCloud</b> — ми до неї
+            доступу не маємо.
+          </div>
+        </div>
+        <div class="data-row">
+          <div class="what">Дані розумного дому (HomeKit)</div>
+          <div class="why">
+            Якщо ти підключаєш кліматичний датчик, показники температури й вологості читаються напряму з HomeKit і
+            використовуються тільки для розрахунку поливу на пристрої — нікуди не надсилаються.
+          </div>
+        </div>
+        <div class="data-row">
+          <div class="what">Покупки (Pro-підписка)</div>
+          <div class="why">
+            Оплата й керування підпискою повністю проходять через <b>Apple StoreKit</b> — ми не бачимо й не зберігаємо
+            дані твоєї картки.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="doc-section">
+      <span class="eyebrow">Розділ 2</span>
+      <h2>Сторонні сервіси</h2>
+      <p>Застосунок звертається до таких зовнішніх сервісів — кожен зі своєю окремою політикою конфіденційності:</p>
+      <ul class="plain">
+        <li><a href="https://www.anthropic.com/legal/privacy" target="_blank" rel="noopener">Anthropic (Claude)</a> — розпізнавання виду з фото, текстові оцінки параметрів поливу, AI-діагностика й фонові рекомендації.</li>
+        <li><a href="https://plantnet.org/en/privacy-policy/" target="_blank" rel="noopener">PlantNet</a> — розпізнавання виду з фото (Pro-рівень).</li>
+        <li><a href="https://open-meteo.com/en/terms" target="_blank" rel="noopener">Open-Meteo</a> — прогноз погоди, коли WeatherKit недоступний.</li>
+        <li><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple</a> — WeatherKit, iCloud-бекап, HomeKit, StoreKit-підписки.</li>
+      </ul>
+      <p class="fineprint">Жоден із них не отримує дані для реклами чи профілювання — лише те, що потрібно конкретному запиту (фото → розпізнавання, координати → погода).</p>
+    </section>
+
+    <section class="doc-section">
+      <span class="eyebrow">Розділ 3</span>
+      <h2>Чого ми не робимо</h2>
+      <ul class="plain">
+        <li>Не показуємо рекламу і не продаємо дані рекламодавцям.</li>
+        <li>Не використовуємо аналітичні чи трекінгові SDK.</li>
+        <li>Не вимагаємо створення акаунта.</li>
+        <li>Не зберігаємо твої дані на власному сервері — їх у нас просто немає де зберігати.</li>
+      </ul>
+    </section>
+
+    <section class="doc-section">
+      <span class="eyebrow">Розділ 4</span>
+      <h2>Контроль і видалення даних</h2>
+      <p>
+        Оскільки основні дані живуть локально, видалення застосунку видаляє їх і з пристрою. Резервне копіювання в
+        iCloud можна вимкнути в Налаштуваннях застосунку в будь-який момент — тоді нова копія просто не створюється, а
+        вже наявну можна видалити через Налаштування iCloud на самому пристрої.
+      </p>
+    </section>
+
+    <section class="doc-section">
+      <span class="eyebrow">Розділ 5</span>
+      <h2>Діти</h2>
+      <p>Застосунок не орієнтований на дітей і свідомо не збирає дані дітей молодше 13 років.</p>
+    </section>
+
+    <section class="doc-section">
+      <span class="eyebrow">Розділ 6</span>
+      <h2>Зміни цієї політики</h2>
+      <p>
+        Якщо ця політика зміниться, дата вгорі сторінки оновиться. Суттєві зміни — наприклад, поява нового
+        стороннього сервісу — будуть додатково згадані в описі оновлення застосунку.
+      </p>
+    </section>
+
+    <hr class="divider">
+
+    <div class="contact-block">
+      <div>
+        <div class="label">Питання щодо приватності</div>
+        <div class="email">privacy@plantstracking.app</div>
+      </div>
+    </div>
+
+    <footer class="doc-footer">
+      <span>© 2026 PlantsTracking</span>
+      <a href="support.html">Сторінка підтримки →</a>
+    </footer>
+  </div>
+</div>
+</body>
+</html>
